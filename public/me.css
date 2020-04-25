@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0 auto;
+    width: 80%;
+    border: 1px solid teal;
+    font-size: 1.1em;
+    transition: 0.5s;
+}
+.pagename{
+    padding: 5px 20px;
+    background-color: teal;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    }
+.pagename h2{
+        float: left;
+        color: white;
+    }
+.pagename .menu{
+         margin: 20px 0;
+        color: white;
+    }
+.pagename .menu .bars{
+    width: 30px;
+    height: 3px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin: 5px;
+}
+.close{
+    font-weight:bolder;
+     font-size:40px;
+      text-align: center;
+      display: none;
+      margin:20px;
+      color: white;
+}
+    
+.navbox nav{
+    display: flex;
+    flex-wrap: wrap;
+    /*background-color: rgb(10, 10, 10);*/
+    padding: 0;
+    transition: 0.5s;
+    
+}
+nav a{
+    text-decoration: none;
+}
+nav span{
+    text-transform: capitalize;
+    text-shadow: bisque;
+    margin: 0 20px;
+    width: 100px;
+    text-align: center;
+    padding: 1px 20px;
+    line-height: 3;
+    color: black;
+    display: none;
+
+}
+nav span:hover{
+    background-color:teal;
+    color: white;
+    transform: scale(1.2);
+    transition: 1s;
+}
+.container{
+    background-color: transparent;
+    padding: 10px;
+    background-image: url('/top.jfif');
+    background-blend-mode: hue;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+.container p{
+    width: 70%;
+    margin:100px auto;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 2em;
+    text-align: center;
+    color: ivory;
+}
+p{padding: 10px; 
+text-transform: initial;}
+h3,h4{
+    text-transform: capitalize;
+}
+.languages{
+    display: flex;
+    justify-content: space-evenly;
+}
+.box{
+    padding: 10px;
+}
+p{text-transform: initial;}
+footer{
+    background-color: black;
+    color: white;
+    position: relative;
+    bottom: 0;
+    margin: 0;
+    float: none;
+    }
+    footer .sub{
+        margin:10px auto;
+        text-align: center;
+    }
+
+@media screen and (max-width:600px){
+    body{
+        width: 100%;
+        border: none;
+        font-size: 1em;
+    }
+    nav{
+        height: 0;
+    }
+
+}

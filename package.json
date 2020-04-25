@@ -1,0 +1,15 @@
+{
+  "name": "me",
+  "version": "1.0.0",
+  "description": "about description of webwalker",
+  "main": "main.js",
+  "scripts": {
+    "start": "main.js"
+  },
+  "author": "washington",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {}
+}

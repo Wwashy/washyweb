@@ -110,11 +110,12 @@ footer{
     float: none;
     height: 150px;
     padding: 30px;
-    }
-    footer .sub{
+}
+footer .sub{
         margin:10px auto;
         text-align: center;
-    }
+}
+
 
 @media screen and (max-width:600px){
     body{
@@ -126,4 +127,11 @@ footer{
         height: 0;
     }
 
+}
+.media.icons{
+    text-align: center;
+}
+.media.icons i{
+margin: 5px 10px;
+text-align: center;
 }

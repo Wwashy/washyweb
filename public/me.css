@@ -131,7 +131,12 @@ footer .sub{
 .media.icons{
     text-align: center;
 }
+.media.icons a{
+    text-decoration: none;
+    color: white;
+}
 .media.icons i{
 margin: 5px 10px;
 text-align: center;
+color: white;
 }

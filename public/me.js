@@ -1,5 +1,5 @@
 function showMenu() {
-    var mq = window.matchMedia("(max-width:480px)");
+    var mq = window.matchMedia("(max-width:600px)");
     if (mq.matches) {
         document.getElementById("navi").style.height = "150px";
     } else {

@@ -1,5 +1,5 @@
-function showMenu() {
-    var mq = window.matchMedia("(max-width:600px)");
+var mq = window.matchMedia("(max-width:600px)");
+function showMenu() {   
     if (mq.matches) {
         document.getElementById("navi").style.height = "150px";
     } else {
@@ -22,6 +22,8 @@ function closeMenu() {
         x[i].style.display = "none";
     }
 }
-window.addEventListener('load', (event) => {
-    document.getElementById("navi").style.height = "0";
-});
+if (mq.matches) {
+    window.addEventListener('load', (event) => {
+        document.getElementById("navi").style.height = "0";
+    });
+}

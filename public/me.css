@@ -5,7 +5,7 @@
 body{
     padding: 0;
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     border: 1px solid teal;
     font-size: 1.1em;
     transition: 0.5s;
@@ -24,6 +24,7 @@ body{
 .pagename .menu{
          margin: 20px 0;
         color: white;
+        display: none;
     }
 .pagename .menu .bars{
     width: 30px;
@@ -61,7 +62,6 @@ nav span{
     padding: 1px 20px;
     line-height: 3;
     color: black;
-    display: none;
 
 }
 nav span:hover{
@@ -116,15 +116,20 @@ footer .sub{
         text-align: center;
 }
 
-
 @media screen and (max-width:600px){
     body{
         width: 100%;
         border: none;
         font-size: 1em;
     }
+    .pagename .menu{
+        display: block;
+    }
     nav{
         height: 0;
+    }
+    nav span{
+        display: none;
     }
 
 }

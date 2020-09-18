@@ -4,12 +4,13 @@
   "description": "about description of webwalker",
   "main": "main.js",
   "scripts": {
-    "start": "main.js"
+    "start": "nodemon main.js"
   },
   "author": "washington",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
   },
   "devDependencies": {}
 }

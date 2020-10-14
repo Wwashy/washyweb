@@ -19,10 +19,11 @@ body{
     justify-content: space-between;
     }
 h1,h2,h3,h4,h5{color: coral;}
-.pagename h2{
-        float: left;
+.washie{
         color: white;
-    }
+}
+    .washie.slogan{font-size: medium;color: coral;font-weight: bold;}
+    .washie.name{font-size: 25px;padding-top:10px;font-weight: 900;}
 .pagename .menu{
          margin: 20px 0;
         color: white;
@@ -47,7 +48,6 @@ h1,h2,h3,h4,h5{color: coral;}
 .navbox nav{
     display: flex;
     flex-wrap: wrap;
-    /*background-color: rgb(10, 10, 10);*/
     padding: 0;
     transition: 0.5s;
     
@@ -79,22 +79,33 @@ nav span:hover{
     background-blend-mode: hue;
     background-size: cover;
     background-position: center;
-    height: 300px;
+    background-position:center;
+    height: 80vh;
+    animation: slide 10s ease infinite alternate-reverse;
+    animation-delay: 3s;
 }
-
+@media screen and (max-width:600px){
+    .container{
+              height: 300px;
+    }
+}
+@keyframes slide{
+    from{background-image: url('/card.png');}
+    to{background-color: black;}
+}
 .container span{
 font-family: monospace;    position: relative;
     padding: 10px;
-    font-weight: 600;
+    font-weight: 1000;
     font-size: 2em;
     color: ivory;
-    animation: random 20s ease infinite alternate;
+    animation: random 20s ease infinite alternate-reverse;
 }
 @keyframes random{
     0%{top:0px;left: 0px;}
-    25%{top:40%;left: 0%;font-size: 35px;}
-    50%{top:40%;left: 30%;font-size: 40px;color: orangered;}
-    75%{top:40%;left: 0%;font-size: 35px;}
+    25%{top:0%;left: 70%;font-size: 25px;}
+    50%{top:70%;left: 70%;font-size: 25px;color: orangered;}
+    75%{top:0%;left: 70%;font-size: 25px;color: teal;}
     100%{top:0%;left: 0%;font-size: 16px;}
 }
 p{padding: 10px; 

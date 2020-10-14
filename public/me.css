@@ -9,6 +9,7 @@ body{
     border: 1px solid teal;
     font-size: 1.1em;
     transition: 0.5s;
+    /* background-image: linear-gradient(120deg,white,purple); */
 }
 .pagename{
     padding: 5px 20px;
@@ -80,14 +81,21 @@ nav span:hover{
     background-position: center;
     height: 300px;
 }
-.container p{
-    width: 70%;
-    margin:100px auto;
+
+.container span{
+font-family: monospace;    position: relative;
     padding: 10px;
     font-weight: 600;
     font-size: 2em;
-    text-align: center;
     color: ivory;
+    animation: random 20s ease infinite alternate;
+}
+@keyframes random{
+    0%{top:0px;left: 0px;}
+    25%{top:40%;left: 0%;font-size: 35px;}
+    50%{top:40%;left: 30%;font-size: 40px;color: orangered;}
+    75%{top:40%;left: 0%;font-size: 35px;}
+    100%{top:0%;left: 0%;font-size: 16px;}
 }
 p{padding: 10px; 
 text-transform: initial;}
@@ -109,7 +117,7 @@ footer{
     bottom: 0;
     margin: 0;
     float: none;
-    height: 150px;
+    height: 160px;
     padding: 30px;
 }
 footer .sub{
